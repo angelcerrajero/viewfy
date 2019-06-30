@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Viewfy España - Tus series y peliculas a la carta</title>
 
 </head>
@@ -14,7 +16,20 @@
 <body>
     <div class="container">
             <header>
-                <div class="logo"><img src="/img/logomini.png" alt=""></div>
+                <div class="logo"><img src="/img/logomini.png" alt="log"></div>
+                <nav class="navbar">
+<!--                 
+                        <input type="checkbox" id="burger-checkbox">
+                        <label for="burger-checkbox" class="burger-label"></label> -->
+                
+                        <ul class="navbar-list">
+                            <li class="navbar-item"><a href="#inicio">Inicio</a></li>
+                            <li class="navbar-item"><a href="#inicio">Novedades</a></li>
+                            <li class="navbar-item"><a href="#peliculas">Peliculas</a></li>
+                            <li class="navbar-item"><a href="#series">Series</a></li>
+                            <li class="navbar-item"><a href="favoritos.html">Favoritos</a></li>
+                        </ul>
+                    </nav>
                 <div class="busca-logout">
                     <input type="text" class="buscador" name="username" id="username" placeholder="Buscar....">
                     <a href="/index.html"> <img src="/img/logout.png" alt="logout" class="logo-logout"></a>
@@ -22,9 +37,9 @@
             </header>
 
             
-            <main>
+            <main id="inicio">
 
-                <section class="novedades">
+                <section class="novedades" >
                         <div class="slider">
                             <ul>
                                 <li><img src="/img/films/snowman.jpg" alt="snowman"></li>
@@ -35,7 +50,7 @@
                         </div>
                 </section>
 
-                <h3 class="cabecera-films">Top Peliculas</h3>
+                <h3 class="cabecera-films" id="peliculas">Top Peliculas</h3>
                 <section class="films">
                     
                         <div class="film">
@@ -43,7 +58,7 @@
                                     <div class="title"> Real Box - Puntuación 6/10</div>
                                     <div class="description"> <h4></h4>Cuenta la vida del mejor boxeador de la historia de los EEUU </div>    
                             </div>
-                            <img src="/img/films/real-boxing.jpg" alt="film 1">
+                            <a href="ficha.html"><img src="/img/films/real-boxing.jpg" alt="film 1"></a>
                             
                         </div>
 
@@ -52,7 +67,7 @@
                                         <div class="title">400 - Puntuación 7/10</div>
                                         <div class="description"> <h4></h4>Los 400 Griegos mas valientes defendieron su tierra de las ordas turcas. Tan solo 400 guerreros consiguieron detener a mas de 30.000 soldados turcos</div>    
                                 </div>
-                            <img src="/img/films/400.jpg" alt="film 2">
+                                <a href="ficha.html"><img src="/img/films/400.jpg" alt="film 2"></a>
                         </div>
 
                         <div class="film">
@@ -60,7 +75,7 @@
                                         <div class="title">James Plotter - Puntuación 10/10</div>
                                         <div class="description"> <h4></h4>Cuenta la vida del famoso mago James Plotter quien en las primeras edades de los magos consiguio unificar a todos y crear un ministerio de magia</div>    
                                 </div>
-                            <img src="/img/films/plotter.jpg" alt="film 3">
+                                <a href="ficha.html"><img src="/img/films/plotter.jpg" alt="film 3"></a>
                         </div>
 
                         <div class="film">
@@ -68,7 +83,7 @@
                                         <div class="title">IronCrack - Puntuación 8/10</div>
                                         <div class="description"> <h4></h4>Un cientifico loco y tremendamente rico decide crear el arma de guerra mas letal jamas vista</div>    
                                 </div>
-                            <img src="/img/films/ironcrack.jpg" alt="film 4">
+                                <a href="ficha.html"><img src="/img/films/ironcrack.jpg" alt="film 4"></a>
                         </div>
 
                         <div class="film">
@@ -76,7 +91,7 @@
                                         <div class="title">Moon Wars - Puntuación 9/10</div>
                                         <div class="description"> <h4></h4>Cuenta la historia del hombre que consigui unificar a todas las lunas de la galaxia para derrotar al temible imperio lunar que amenaza la democracia </div>    
                                 </div>
-                            <img src="/img/films/moonwars.jpg" alt="film 5">
+                                <a href="ficha.html"><img src="/img/films/moonwars.jpg" alt="film 5"></a>
                         </div>
 
                         <div class="film">
@@ -84,7 +99,7 @@
                                         <div class="title">Spidey - Puntuación 9/10</div>
                                         <div class="description"> <h4></h4>Un joven estudiante de ingenieria decide ayudar a todos los habitantes de su ciudad debido a los altos indices de criminalidad</div>    
                                 </div>
-                            <img src="/img/films/spidey.jpg" alt="film 6">
+                                <a href="ficha.html"><img src="/img/films/spidey.jpg" alt="film 6"></a>
                         </div>
 
                         <div class="film">
@@ -92,7 +107,7 @@
                                         <div class="title">Stalingradest - Puntuación 9/10</div>
                                         <div class="description"> <h4></h4>La terrible historia de la batalla de Stalingradest, una de las mas temibles y destructoras de toda la historia de la humanidad</div>    
                                 </div>
-                            <img src="/img/films/stalingrad.jpg" alt="film7">
+                                <a href="ficha.html"><img src="/img/films/stalingrad.jpg" alt="film7"></a>
                         </div>
 
                         <div class="film">
@@ -100,114 +115,116 @@
                                         <div class="title">Genius - Puntuación 9/10</div>
                                         <div class="description"> <h4></h4>La historia de un genio de lampara un poco loco que concede deseos a cualquier persona que encuentre su lampara en el desierto del sahara </div>    
                                 </div>
-                            <img src="/img/films/genius.jpg" alt="film 8">
+                                <a href="ficha.html"><img src="/img/films/genius.jpg" alt="film 8"></a>
                         </div>
                 </section>
 
-                <h3 class="cabecera-latest">Series</h3>
+                <h3 class="cabecera-latest" id="series">Series</h3>
                 <section class="latest">
                         <div class="latest-content">
                                 <div class="latest-info">
-                                        <div class="title">Puntuación 9/10</div>
-                                        <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                        <div class="title">Americans - Puntuación 9/10</div>
+                                        <div class="description"> <h4></h4>Series de espias americanos en terreno ruso</div>    
                                 </div>
-                                <img src="/img/films/jail.jpg" alt="latest1">
+                                <a href="ficha.html"><img src="/img/series/american.jpg" alt="americans"></a>
                                 
                             </div>
     
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Big Bang - Puntuación 7/10</div>
+                                            <div class="description"> <h4></h4>Una panda de freaks muy inteligentes cuenta su vida universitaria</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest2">
+                                <a href="ficha.html"><img src="/img/series/bigbang.jpg" alt="bigbang"></a>
                             </div>
     
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">High Castle - Puntuación 6,5/10</div>
+                                            <div class="description"> <h4></h4>Los nazis ganan la II Guerra Mundial y se reparten EEUU junto con sus aliados Japoneses.</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest3">
+                                    <a href="ficha.html"><img src="/img/series/castle.jpg" alt="high-castle"></a>
                             </div>
     
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Cuentame - Puntuación 8/10</div>
+                                            <div class="description"> <h4></h4>Cuenta la historia de una familia de clase media Española desde la epoca Franquista hasta nuestros dias. Galardonada como la serie mas larga de producción Española</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest4">
+                                    <a href="ficha.html"><img src="/img/series/cuentame.jpg" alt="cuentame"></a>
                             </div>
     
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Desaparecida - Puntuación 5/10</div>
+                                            <div class="description"> <h4></h4>Una chica desaparece y un cuerpo de elite policia intenta averiguar que paso para poder encontrarla con vida </div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest5">
+                                    <a href="ficha.html"><img src="/img/series/desaparecida.jpg" alt="desaparecida"></a>
                             </div>
     
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">El Mejor Doctor - Puntuación 10/10</div>
+                                            <div class="description"> <h4></h4>Un medico residente con deficit de atencion y con el sindrome del sabio, quiere hacerse un hueco en el escalafon mas alto de la medicina actual a nivel mundial.</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest6">
+                                    <a href="ficha.html"><img src="/img/series/doctor.jpg" alt="doctor"></a>
                             </div>
     
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Muertos vivientes - Puntuación 9/10</div>
+                                            <div class="description"> <h4></h4>¿Como se inicio la mayor catastrofe quimica que provoco un virus y una pandemia a nivel mundial?, descubrelo en esta precuela que apunta a lo mas alto</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest7">
+                                    <a href="ficha.html"><img src="/img/series/fearw.jpg" alt="fearw"></a>
                             </div>
     
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Ncis - Puntuación 6/10</div>
+                                            <div class="description"> <h4></h4>Cuenta el dia a dia del departamento de criminologia mas importante de New York y de EEUU</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest8">
+                                    <a href="ficha.html"><img src="/img/series/ncis.jpg" alt="ncis"></a>
                             </div>
 
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Los vecinos - Puntuación 7/10</div>
+                                            <div class="description"> <h4></h4>La comunidad de vecinos mas loca y dicharachera de la TV. No te la pierdas si quieres llorar de la risa </div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest9">
+                                    <a href="ficha.html"><img src="/img/series/vecinos.jpg" alt="vecinos"></a>
                             </div>
 
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Los Vikingos - Puntuación 9/10</div>
+                                            <div class="description"> <h4></h4>Cuenta la historia de como se forjaron los Vikingos y como estos consiguieron invadir todos los puntos importantes de Reino Unido y Europa</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest10">
+                                    <a href="ficha.html"><img src="/img/series/vikings.jpg" alt="vikingos"></a>
                             </div>
 
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Jail - Puntuación 5/10</div>
+                                            <div class="description"> <h4></h4>Cuenta la vida en la carcel de un chico con muchos problemas. </div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest11">
+                                    <a href="ficha.html"><img src="/img/films/jail.jpg" alt="jail"></a>
                             </div>
 
                             <div class="latest-content">
                                     <div class="latest-info">
-                                            <div class="title">Puntuación 9/10</div>
-                                            <div class="description"> <h4></h4>Descripcion la pelicula es muy buena pero tiene algunos problemas de ajuste por que no se como ajustar el texto. </div>    
+                                            <div class="title">Vis con vis - Puntuación 8,5/10</div>
+                                            <div class="description"> <h4></h4>El dia a dia de una carcel de alta seguridad de mujeres. Como sobreviven, como trafican y sobretodo como intentan escapar.</div>    
                                     </div>
-                                <img src="/img/films/jail.jpg" alt="latest12">
+                                    <a href="ficha.html"><img src="/img/series/vis.jpg" alt="vis"></a>
                             </div>
                 </section>
                
             </main>    
             
             <footer>
-                <h4>FOOTER</h4>
+                    <div class="logo-footer"><img src="/img/logomini.png" alt=""></div>
+                    <h4>Todos los derechos reservados, © 1996-2019, Viewfy Inc. o sus filiales</h4>
+                
             </footer>
 
 

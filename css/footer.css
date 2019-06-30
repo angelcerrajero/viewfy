@@ -1,0 +1,23 @@
+/* /////////////////////   FOOTER    /////////////////////////// */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #11171c;
+    /* border-top: solid 0.1px grey; */
+    height: 100px;
+    color: white;
+    /* border: solid 1px red; */
+}
+
+.logo-footer {
+    align-self: center;
+    
+    
+}
+
+footer h4 {
+    font-size: 0.7rem;
+    align-self: center;
+}

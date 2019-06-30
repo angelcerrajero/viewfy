@@ -25,6 +25,7 @@ header {
     z-index: 1;
     position: fixed;
     width: 100%;
+    /* max-width: 700px; */
     padding: 5px;
     align-items: center;
     justify-content: space-between;
@@ -86,11 +87,51 @@ section {
     height: 100%;
     justify-content: space-around;
     
+    
+}  
+
+
+/* /////////////////////   INFO    /////////////////////////// */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    /* border: solid 1px pink; */
+}
+
+.titulo {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2rem;
+}
+
+
+.datos {
+    margin-top: 50px;
+    width: 90%;
+    text-align: justify;
+    color: white;
+    ;
+
+}
+
+.sinopsis {
+    padding: 0;
+    margin: 0;
 }
 
 
 
-/* /////////////////////   SERIES    /////////////////////////// */
+
+/* /////////////////////   ACTORS    /////////////////////////// */
+
+
 
 .cabecera-latest {
     color: white;
@@ -98,25 +139,30 @@ section {
     margin-top: 50px;
 }
 
+.titulo-actores {
+    font-size: 1.7rem;
+    color: white
+}
 
-.latest {
+
+.actors {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    /* max-width: 1169px; */
-    margin-top: 20px;
+    max-width: 1200px;
+    margin-top: 2px;
     margin-bottom: 100px;
     /* border: solid blue 1px; */
 
 }
 
 .latest-content {
-    /* margin-top: 50px; */
+    margin-top: 50px;
     
 }
 
- .latest img {
+ .actors img {
    height: 166px;
     width: 296px;
 } 
@@ -125,7 +171,13 @@ section {
     position: relative;
     
 }
-
+.title {
+    color: #019b6a;
+    background: black;
+    width: 100%;
+    height: 30px;
+    
+}
 
 .latest-info {
     display: flex;
@@ -161,137 +213,15 @@ section {
 
 
 
-/* /////////////////////   FILMS    /////////////////////////// */
 
-.cabecera-films {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 30px;
+
+/* /////////////////////   RELATED    /////////////////////////// */
+.titulo-related {
+    font-size: 1.7rem;
+    color: white
 }
 
-.films {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 1169px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* border: solid red 1px; */
-    
+.related {
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
-
-.films img {
-    height: 350px;
-    width: 234px;
-}
-
-
-
-.film {
-    position: relative;
-}
-
-
-.film-info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    display: none;
-    
-
-}
-
-.title {
-    color: #019b6a;
-    background: black;
-    width: 234px;
-    height: 30px;
-    
-}
- 
-.description{
-    color: white;
-    align-content: flex-end;
-    margin-top: 5px;
-    width: 234px;
-    font-size: 0.9rem;
-    
-}
-
-
-.film:hover .film-info {
-    display: inherit;
-    background-color: rgba(0, 0, 0,.3);
-
-}
-
-.film:hover .film-info {
-    display: inherit;
-
-}
-
-.film:hover .description {
-    color: white;
-}
-
-
-.film:hover img {
-    opacity: .2;
-}
-
-
-/* /////////////////////   NOVEDADES    /////////////////////////// */
-
-.novedades {
-    margin-top: 35px;
-    margin-bottom: 30px;
-}
-
-
-.slider {
-    width: 95%;
-    /* margin: auto; */
-    overflow: hidden;
-}
-
-
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: pasar 15s infinite;
-    animation-direction: alternate;
-}
-
-.slider li {
-    list-style: none;
-    width: 100%;
-}
-
-.slider img {
-    width: 100%
-}
-
-
-@keyframes pasar{
-    0% { margin-left: 0; }
-    20% { margin-left: 0; }
-
-    25% { margin-left: -100%; }
-    40% { margin-left: -100%; }
-
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-
-    75% { margin-left: -300%; }
-    100% { margin-left: -300%; }
-
-}
-
-
-
